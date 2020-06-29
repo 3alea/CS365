@@ -11,6 +11,9 @@ public class CountdownLogic : MonoBehaviour
     public GameObject countdownObj;
     public GameObject player;
 
+    // Rotating objects (if you want to enable some)
+    public List<objSpinLogic> rotatingObjs;
+
     public float scaleMin;
     public float scaleMax;
 
@@ -81,6 +84,9 @@ public class CountdownLogic : MonoBehaviour
                 player.GetComponent<Ball>().isActive = true;
                 player.GetComponent<Rigidbody>().isKinematic = false;
                 timer.TimerStart();
+
+                for (int i = 0; i < rotatingObjs.Capacity; i++)
+                    rotatingObjs[i].enabled = true;
             }
 
             counter = 0.0f;

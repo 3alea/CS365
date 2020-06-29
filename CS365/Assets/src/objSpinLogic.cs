@@ -7,12 +7,29 @@ public class objSpinLogic : MonoBehaviour
     public Vector3 spinVec;
     public float spinIntensity;
 
+    public bool startRotating = true;
+    public bool randomStartRotation = false;
+
     private Transform tr;
 
     // Start is called before the first frame update
     void Start()
     {
         tr = GetComponent<Transform>();
+
+        if (randomStartRotation)
+        {
+            Vector3 startingRot = transform.eulerAngles;
+            
+            if (spinVec.x != 0.0f)
+                startingRot.x = Random.Range(0.0f, 2.0f * Mathf.PI);
+            if (spinVec.y != 0.0f)
+                startingRot.y = Random.Range(0.0f, 2.0f * Mathf.PI);
+            if (spinVec.z != 0.0f)
+                startingRot.z = Random.Range(0.0f, 2.0f * Mathf.PI);
+
+            transform.eulerAngles = startingRot;
+        }
     }
 
     // Update is called once per frame
