@@ -44,7 +44,15 @@ public class ZoneShowcaseCameraLogic : MonoBehaviour
             if (waitTimer >= transitionTime)
             {
                 flashTransition.color = new Color(flashTransition.color.r, flashTransition.color.g, flashTransition.color.b, 1.0f);
-                GetComponent<FocusedCamera>().enabled = true;
+
+                FocusedCamera camLogic = GetComponent<FocusedCamera>();
+                BoulderLevelCamera boulderCamLogic = GetComponent<BoulderLevelCamera>();
+
+                if (camLogic != null)
+                    camLogic.enabled = true;
+                else if (boulderCamLogic != null)
+                    boulderCamLogic.enabled = true;
+
                 GetComponent<CountdownLogic>().enabled = true;
                 this.enabled = false;
             }
