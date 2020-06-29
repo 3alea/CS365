@@ -11,6 +11,9 @@ public class CountdownLogic : MonoBehaviour
     public GameObject countdownObj;
     public GameObject player;
 
+    // Rotating objects (if you want to enable some)
+    public List<objSpinLogic> rotatingObjs;
+
     public GameObject giantBoulder;
 
     public float scaleMin;
@@ -87,6 +90,9 @@ public class CountdownLogic : MonoBehaviour
                     giantBoulder.GetComponent<Rigidbody>().isKinematic = false;
 
                 timer.TimerStart();
+
+                for (int i = 0; i < rotatingObjs.Capacity; i++)
+                    rotatingObjs[i].enabled = true;
             }
 
             counter = 0.0f;
