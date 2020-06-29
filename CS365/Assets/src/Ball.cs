@@ -117,7 +117,7 @@ public class Ball : MonoBehaviour
 
         // F YOU DIED
         if(trans.position.y < death_hight)
-            SceneManager.LoadScene("Scenes/Menu");
+            SceneManager.LoadScene("Scenes/Menu(Galaxy)");
     }
 
     void OnCollisionEnter(Collision other)
