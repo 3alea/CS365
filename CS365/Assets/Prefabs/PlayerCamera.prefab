@@ -545,11 +545,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  offset: {x: 0, y: 5, z: -4}
-  target_offset: {x: 0, y: 3, z: 0}
-  rotation_speed: 6
+  cameraRadius: 5
+  rotationSpeed_X: 3
+  rotationSpeed_Y: 1.45
   minY: -5
-  maxY: 0
+  maxY: -1
 --- !u!114 &1281307607495550021
 MonoBehaviour:
   m_ObjectHideFlags: 0
