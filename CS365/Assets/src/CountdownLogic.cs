@@ -11,6 +11,8 @@ public class CountdownLogic : MonoBehaviour
     public GameObject countdownObj;
     public GameObject player;
 
+    public GameObject giantBoulder;
+
     public float scaleMin;
     public float scaleMax;
 
@@ -80,6 +82,10 @@ public class CountdownLogic : MonoBehaviour
             {
                 player.GetComponent<Ball>().isActive = true;
                 player.GetComponent<Rigidbody>().isKinematic = false;
+
+                if (giantBoulder != null)
+                    giantBoulder.GetComponent<Rigidbody>().isKinematic = false;
+
                 timer.TimerStart();
             }
 

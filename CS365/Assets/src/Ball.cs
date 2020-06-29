@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Ball : MonoBehaviour
 {
+    public bool lockVerticalMovement = false;
+    public bool limitVelocity = true;
+
     public Transform mCamera;
     public float MovSpeed;
     public float MaxSpeed;
@@ -65,16 +68,20 @@ public class Ball : MonoBehaviour
 
         Vector3 result = new Vector3(0, 0, 0);
 
-        if (rb.velocity.magnitude < MaxSpeed)
+        if (rb.velocity.magnitude < MaxSpeed || limitVelocity == false)
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) && lockVerticalMovement == false)
                 result += view;//rb.AddForce(view * MovSpeed);
             if (Input.GetKey(KeyCode.A))
                 result += right;
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S) && lockVerticalMovement == false)
                 result -= view;
             if (Input.GetKey(KeyCode.D))
                 result -= right;
+        }
+        else
+        {
+            Debug.Log("Max velocity reached\n");
         }
 
         result.Normalize();
