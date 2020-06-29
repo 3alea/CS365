@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-15.182014465332032,"y":-39.320491790771487,"z":40.372371673583987},"rotation":{"x":0.34272462129592898,"y":-1.3397053066910304e-7,"z":0.000003463995199126657,"w":0.939454972743988},"size":33.651695251464847,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-8.130448341369629,"y":-4.463334083557129,"z":27.889923095703126},"rotation":{"x":0.08236095309257508,"y":0.09254980087280274,"z":-0.007655913941562176,"w":0.9922942519187927},"size":21.41014862060547,"orthographic":false}
+>>>>>>> BallMovement
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":289.8931579589844,"y":415.7085876464844,"z":98.9764404296875},"rotation":{"x":0.1958933174610138,"y":0.15809108316898347,"z":-0.03198319301009178,"w":0.9672965407371521},"size":523.7424926757813,"orthographic":false}
+>>>>>>> Worm
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-14.868715286254883,"y":-2.7177538871765138,"z":0.109222412109375},"rotation":{"x":0.19407439231872559,"y":0.0029474098701030018,"z":-0.000546451541595161,"w":0.981012225151062},"size":11.492258071899414,"orthographic":false}
+>>>>>>> Marble
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-47.013675689697269,"y":9.066036224365235,"z":9.200743675231934},"rotation":{"x":0.1357458531856537,"y":0.7051145434379578,"z":-0.14033545553684236,"w":0.6817459464073181},"size":11.259218215942383,"orthographic":false}
+>>>>>>> Level
