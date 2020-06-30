@@ -22,7 +22,7 @@ public class WinCondition : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Scenes/Menu");
+            SceneManager.LoadScene("Scenes/Menu(Galaxy)");
         }
     }
 }
