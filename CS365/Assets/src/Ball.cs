@@ -40,6 +40,11 @@ public class Ball : MonoBehaviour
     //Enemy
     public float pushback_vel;
 
+    public WinCondition wc;
+
+    // Level to restart
+    public string level2Load;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,10 +84,6 @@ public class Ball : MonoBehaviour
                 result -= view;
             if (Input.GetKey(KeyCode.D))
                 result -= right;
-        }
-        else
-        {
-            Debug.Log("Max velocity reached\n");
         }
 
         result.Normalize();
@@ -124,8 +125,8 @@ public class Ball : MonoBehaviour
         }
 
         // F YOU DIED
-        if(trans.position.y < death_hight)
-            SceneManager.LoadScene("Scenes/Menu(Galaxy)");
+        if (trans.position.y < death_hight)
+            Restart();
     }
 
     void OnCollisionEnter(Collision other)
@@ -154,5 +155,10 @@ public class Ball : MonoBehaviour
     public void SetActive(bool active)
     {
         
+    }
+
+    public void Restart()
+    {
+        wc.LoadCertainLevel(level2Load);
     }
 }

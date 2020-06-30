@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class KillPlayer : MonoBehaviour
 {
+    public Ball wc;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +21,9 @@ public class KillPlayer : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        //Debug.Log("TriggerEnter called\n");
-
         if (col.collider.CompareTag("Player"))
         {
-            //Debug.Log("Collision with player detected\n");
-
-            SceneManager.LoadScene("Scenes/Menu(Galaxy)");
+            wc.Restart();
         }
     }
 }

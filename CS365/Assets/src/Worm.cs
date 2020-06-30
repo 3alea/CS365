@@ -46,11 +46,7 @@ public class Worm : MonoBehaviour{
 
             if (heightDiff > 0.13){
                 Destroy(this.gameObject);
-            } else {
-                SceneManager.LoadScene("Scenes/Menu");
             }
-
-
         }
     }
 }

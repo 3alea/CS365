@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CollisionKill : MonoBehaviour
 {
+    public Ball wc;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,9 @@ public class CollisionKill : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player") //if player found
+        if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Scenes/Menu");
+            wc.Restart();
         }
     }
 }

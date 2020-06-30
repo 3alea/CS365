@@ -47,25 +47,28 @@ public class LevelDataController : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        // Create the menu
-        menu.SetActive(true);
+        if(col.collider.name == "Player")
+        {
+            // Create the menu
+            menu.SetActive(true);
 
-        // Store run time
-        runTime = Time.time - playerTime.StartTime;
+            // Store run time
+            runTime = Time.time - playerTime.StartTime;
 
-        // Save score
-        SaveData();
+            // Save score
+            SaveData();
 
-        // Set the high scores
-        LevelData temp = LoadDataForLevelData();
-        if (temp == null)
-            temp = new LevelData(this);
+            // Set the high scores
+            LevelData temp = LoadDataForLevelData();
+            if (temp == null)
+                temp = new LevelData(this);
 
-        highScoreTime = temp.highScores[levelNumber];
-        highScoreCoins = temp.topCollectibleNumber[levelNumber];
+            highScoreTime = temp.highScores[levelNumber];
+            highScoreCoins = temp.topCollectibleNumber[levelNumber];
 
-        // Stop time
-        Time.timeScale = 0.0f;
+            // Stop time
+            Time.timeScale = 0.0f;
+        }
     }
 
     // Saves the level's data
