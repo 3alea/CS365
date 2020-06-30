@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
-public class WinCondition : MonoBehaviour
+public class KillPlayer : MonoBehaviour
 {
-    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +19,12 @@ public class WinCondition : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Player")
+        //Debug.Log("TriggerEnter called\n");
+
+        if (col.collider.CompareTag("Player"))
         {
+            //Debug.Log("Collision with player detected\n");
+
             SceneManager.LoadScene("Scenes/Menu(Galaxy)");
         }
     }

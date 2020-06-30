@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour
 {
     public bool lockVerticalMovement = false;
     public bool limitVelocity = true;
+    public bool canJumpMiguel = true;   // Used by RemoveJump script for boulder level (jump restricted works with timers)
 
     public Transform mCamera;
     public float MovSpeed;
@@ -97,7 +98,7 @@ public class Ball : MonoBehaviour
             internalTimer = 0.0f;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canJumpMiguel)
         {
             if ((!DoubleJump && JumpCount == 1) || (DoubleJump && JumpCount == 2) || JumpRestricted)
                 return;

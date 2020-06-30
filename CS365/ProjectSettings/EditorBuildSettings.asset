@@ -11,4 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Level_1.unity
+    guid: 52a467243bf4fab4b99669b9b97e0f2b
+  - enabled: 1
+    path: Assets/Scenes/Level_2.unity
+    guid: 89dbbe130a6670147af6915a71d1076c
+  - enabled: 1
+    path: Assets/Scenes/Level_Soccer.unity
+    guid: 6c35e62f7b4819241b034b41b4fde1bb
+  - enabled: 1
+    path: Assets/Scenes/LevelMiguel.unity
+    guid: 8cefd7b6b93920148bcd20ec7df3dbc8
+  - enabled: 1
+    path: Assets/Scenes/Menu(Galaxy).unity
+    guid: 79d8febe7d529a545862c12ebf4ff080
+  - enabled: 1
+    path: Assets/Scenes/Template Level 1.unity
+    guid: 95400699695dfc447be70b567e444f16
   m_configObjects: {}

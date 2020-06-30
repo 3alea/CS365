@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class WinCondition : MonoBehaviour
+public class SlowPersisted : MonoBehaviour
 {
-    public GameObject player;
+    public float factor = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +18,13 @@ public class WinCondition : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerStay(Collider other)
     {
-        if (col.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Scenes/Menu(Galaxy)");
+            Rigidbody rb = other.GetComponent<Rigidbody>();
+
+            rb.velocity = Vector3.Normalize(rb.velocity) * factor;
         }
     }
 }
