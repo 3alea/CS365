@@ -22,11 +22,11 @@ public class objSpinLogic : MonoBehaviour
             Vector3 startingRot = transform.eulerAngles;
             
             if (spinVec.x != 0.0f)
-                startingRot.x = Random.Range(0.0f, 2.0f * Mathf.PI);
+                startingRot.x = Random.Range(0.0f, 360.0f);
             if (spinVec.y != 0.0f)
-                startingRot.y = Random.Range(0.0f, 2.0f * Mathf.PI);
+                startingRot.y = Random.Range(0.0f, 360.0f);
             if (spinVec.z != 0.0f)
-                startingRot.z = Random.Range(0.0f, 2.0f * Mathf.PI);
+                startingRot.z = Random.Range(0.0f, 360.0f);
 
             transform.eulerAngles = startingRot;
         }
