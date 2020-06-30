@@ -6,6 +6,7 @@ using UnityEngine;
 public class BoulderKillPlayer : MonoBehaviour
 {
     public GameObject player;
+    public Ball wc;
     public float offset = 5;
 
     // Start is called before the first frame update
@@ -19,7 +20,7 @@ public class BoulderKillPlayer : MonoBehaviour
     {
         if (player.transform.position.x < transform.position.x + offset)
         {
-            SceneManager.LoadScene("Scenes/Menu(Galaxy)");
+            wc.Restart();
         }
     }
 }

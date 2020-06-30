@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class WinCondition : MonoBehaviour
 {
     public GameObject player;
+
+    public string level2load;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,18 +21,30 @@ public class WinCondition : MonoBehaviour
         
     }
 
-    // When the player collides here, instantiate in-between menu showing stats and high scores
-    void OnCollisionEnter(Collision col)
-    {
-        //if (col.gameObject.tag == "Player")
-        //{
-        //    LoadMainMenu();
-        //}
-    }
-
     // Back to main menu function
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene("Scenes/Menu");
+        // Continue time
+        Time.timeScale = 1.0f;
+
+        SceneManager.LoadScene("Scenes/Menu(Galaxy)");
+    }
+
+    // Back to main menu function
+    public void LoadLevel()
+    {
+        // Continue time
+        Time.timeScale = 1.0f;
+
+        SceneManager.LoadScene("Scenes/" + level2load);
+    }
+
+    // Back to main menu function
+    public void LoadCertainLevel(string level)
+    {
+        // Continue time
+        Time.timeScale = 1.0f;
+
+        SceneManager.LoadScene("Scenes/" + level);
     }
 }
