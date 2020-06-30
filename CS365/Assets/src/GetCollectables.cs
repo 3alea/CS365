@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GetCollectables : MonoBehaviour{
 
-    private int CollectableNumber;
+    public int CollectableNumber;
     public UnityEngine.UI.Text CollectableText;
 
     // Start is called before the first frame update
