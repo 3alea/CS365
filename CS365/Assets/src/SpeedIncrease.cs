@@ -21,6 +21,14 @@ public class SpeedIncrease : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
             other.GetComponent<Rigidbody>().velocity *= multiplier;
+
+            //Speed sfx(this is only in miguels level)
+
+
+            //if (!FindObjectOfType<AudioManager>().IsPlaying("PowerUp"))
+            //     FindObjectOfType<AudioManager>().Play("PowerUp");
+        }
     }
 }

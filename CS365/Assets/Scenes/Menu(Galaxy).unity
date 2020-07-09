@@ -854,6 +854,15 @@ MonoBehaviour:
     loop: 1
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: PowerUp
+    clip: {fileID: 8300000, guid: 123fde523a097d5419a69e401d32ae6c, type: 3}
+    volume: 0.42
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &1289687029
 Transform:
   m_ObjectHideFlags: 0
