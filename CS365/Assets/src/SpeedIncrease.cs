@@ -6,6 +6,8 @@ public class SpeedIncrease : MonoBehaviour
 {
     public float multiplier = 1.5f;
 
+    public Vector3 direction;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class SpeedIncrease : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Rigidbody>().velocity *= multiplier;
+            other.GetComponent<Rigidbody>().velocity = direction * multiplier;
 
             //Speed sfx(this is only in miguels level)
             if (!FindObjectOfType<AudioManager>().IsPlaying("SpeedUp"))
