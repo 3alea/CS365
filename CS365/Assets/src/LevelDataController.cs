@@ -32,6 +32,10 @@ public class LevelDataController : MonoBehaviour
     // Run time
     public float runTime;
 
+    // Handles mouse cursor locking / unlocking.
+    // Used to hide / show cursor when necessary.
+    private MouseCapturer mCapturer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +53,8 @@ public class LevelDataController : MonoBehaviour
     {
         if(col.collider.name == "Player")
         {
+            mCapturer = new MouseCapturer(CursorLockMode.None);
+
             // Create the menu
             menu.SetActive(true);
 
