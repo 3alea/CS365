@@ -17,9 +17,9 @@ public class SpeedUpOrb : MonoBehaviour
             obj.gameObject.GetComponent<Ball>().speeded_up_t = 0.0f;
             Destroy(this.gameObject);
 
-            if(!FindObjectOfType<AudioManager>().IsPlaying("PowerUp"))
+            if(!FindObjectOfType<AudioManager>().IsPlaying("SpeedUp"))
             {
-                FindObjectOfType<AudioManager>().Play("PowerUp");
+                FindObjectOfType<AudioManager>().Play("SpeedUp");
             }
         }
     }

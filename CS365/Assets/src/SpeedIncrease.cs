@@ -25,10 +25,10 @@ public class SpeedIncrease : MonoBehaviour
             other.GetComponent<Rigidbody>().velocity *= multiplier;
 
             //Speed sfx(this is only in miguels level)
-
-
-            //if (!FindObjectOfType<AudioManager>().IsPlaying("PowerUp"))
-            //     FindObjectOfType<AudioManager>().Play("PowerUp");
+            if (!FindObjectOfType<AudioManager>().IsPlaying("SpeedUp"))
+            {
+                FindObjectOfType<AudioManager>().Play("SpeedUp");
+            }
         }
     }
 }

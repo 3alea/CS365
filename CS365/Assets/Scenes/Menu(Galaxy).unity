@@ -860,7 +860,16 @@ MonoBehaviour:
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
-    loop: 1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: SpeedUp
+    clip: {fileID: 8300000, guid: 776b990fdd4f7cf4f8005f1966bbbae4, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
 --- !u!4 &1289687029
