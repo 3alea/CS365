@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,7 +32,7 @@ public class DisplayData : MonoBehaviour
         switch (myType)
         {
             case dataType.eTime:
-                text.text = "Time: " + System.Math.Round(data.runTime, 2);
+                text.text = "Time: " + System.Math.Round(data.runTime, 1);
                 break;
 
             case dataType.eBestTime:
