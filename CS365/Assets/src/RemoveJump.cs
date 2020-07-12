@@ -19,6 +19,6 @@ public class RemoveJump : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-            other.GetComponent<Ball>().canJumpMiguel = false;
+            other.GetComponent<Ball>().EnableJumping = false;
     }
 }
