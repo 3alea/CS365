@@ -26,6 +26,9 @@ public class SpeedZonePass : MonoBehaviour{
             Vector3 v = direction * SpeedUp;
             rb.AddForce(v);
             lastPosition = transform.position;
+
+            if (!FindObjectOfType<AudioManager>().IsPlaying("PowerUp"))
+                 FindObjectOfType<AudioManager>().Play("PowerUp");
         }
     }
 }
