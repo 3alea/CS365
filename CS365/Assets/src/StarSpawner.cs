@@ -9,7 +9,7 @@ public class StarSpawner : MonoBehaviour
     public GameObject prefab;
     
     // The stars
-    public GameObject[] stars;
+    GameObject[] stars;
 
     // Checks the necessary times to activate the stars
     public LevelDataController dataController;
@@ -18,9 +18,9 @@ public class StarSpawner : MonoBehaviour
     public float distance;
 
     // Final time store
-    public float finalTime;
+    float finalTime;
 
-    public float temp;
+    float temp;
 
     // Start is called before the first frame update
     void Start()

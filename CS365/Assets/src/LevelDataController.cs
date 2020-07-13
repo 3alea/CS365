@@ -21,7 +21,7 @@ public class LevelDataController : MonoBehaviour
     public GetCollectables collectibleNumber;
 
     // This gameobject
-    public GameObject menu;
+    public MenuController menu;
 
     // High score
     public float highScoreTime;
@@ -41,7 +41,6 @@ public class LevelDataController : MonoBehaviour
     {
         highScoreTime = 3600.0f;
         highScoreCoins = 0;
-        menu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -56,7 +55,7 @@ public class LevelDataController : MonoBehaviour
             mCapturer = new MouseCapturer(CursorLockMode.None);
 
             // Create the menu
-            menu.SetActive(true);
+            menu.ShowMenu(MenuController.MenuType.LEVEL_WIN_MENU);
 
             // Store run time
             runTime = Time.time - playerTime.StartTime;
