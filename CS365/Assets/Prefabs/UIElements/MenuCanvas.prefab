@@ -235,6 +235,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8450374326117684361, guid: d3e4f51a2a358c549a6c4d269a60b90e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450374326117684361, guid: d3e4f51a2a358c549a6c4d269a60b90e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450374326117684361, guid: d3e4f51a2a358c549a6c4d269a60b90e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450374326117684361, guid: d3e4f51a2a358c549a6c4d269a60b90e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3649207557568595457}
+    - target: {fileID: 8450374326117684361, guid: d3e4f51a2a358c549a6c4d269a60b90e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450374326117684361, guid: d3e4f51a2a358c549a6c4d269a60b90e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3e4f51a2a358c549a6c4d269a60b90e, type: 3}
 --- !u!1 &7043869222271556174 stripped
@@ -256,6 +286,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4122110751476836864}
     m_Modifications:
+    - target: {fileID: 1166794256731443243, guid: e7ed45c2c92750749a8c3e9ec8fb85de,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3649207557568595457}
+    - target: {fileID: 1166794256731443243, guid: e7ed45c2c92750749a8c3e9ec8fb85de,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToLevelSelection
+      objectReference: {fileID: 0}
     - target: {fileID: 3399779071586721569, guid: e7ed45c2c92750749a8c3e9ec8fb85de,
         type: 3}
       propertyPath: dataController

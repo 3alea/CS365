@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4550722009080305966}
   - component: {fileID: 8774836782074036701}
   - component: {fileID: 7593472472571349776}
+  - component: {fileID: 6310317093613962607}
   m_Layer: 5
   m_Name: Tutorial
   m_TagString: Untagged
@@ -118,7 +119,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8774836782074036701}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6310317093613962607}
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6310317093613962607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3672002994115373445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6527998ffd836d449b6774ff35b6630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  level2load: SampleLevel
 --- !u!1 &4088239949637655847
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,6 +325,7 @@ GameObject:
   - component: {fileID: 5902586209807790440}
   - component: {fileID: 7274111147795949871}
   - component: {fileID: 966980126712953529}
+  - component: {fileID: 3861737348633248047}
   m_Layer: 5
   m_Name: Descenso
   m_TagString: Untagged
@@ -405,7 +432,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7274111147795949871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3861737348633248047}
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3861737348633248047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4447119575640848256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6527998ffd836d449b6774ff35b6630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  level2load: LevelMiguel
 --- !u!1 &4501200905034330052
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +772,7 @@ GameObject:
   - component: {fileID: 7866960532349407575}
   - component: {fileID: 1520061021754548317}
   - component: {fileID: 1425343158023291850}
+  - component: {fileID: 8040497355288858100}
   m_Layer: 5
   m_Name: Ascend
   m_TagString: Untagged
@@ -826,7 +879,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1520061021754548317}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8040497355288858100}
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8040497355288858100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6026199467976031968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6527998ffd836d449b6774ff35b6630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  level2load: Level_2
 --- !u!1 &6311708425540915491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,6 +1110,7 @@ GameObject:
   - component: {fileID: 5092846281106814342}
   - component: {fileID: 1015456064926415046}
   - component: {fileID: 2274725633559724760}
+  - component: {fileID: 3869780816072442568}
   m_Layer: 5
   m_Name: Football
   m_TagString: Untagged
@@ -1138,7 +1217,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1015456064926415046}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3869780816072442568}
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3869780816072442568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8430871862820581679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6527998ffd836d449b6774ff35b6630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  level2load: Level_Soccer
 --- !u!1 &9175165677642307488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,6 +1255,7 @@ GameObject:
   - component: {fileID: 8908324296933369276}
   - component: {fileID: 7785110083296918423}
   - component: {fileID: 7073541955943645458}
+  - component: {fileID: 7816122739893303762}
   m_Layer: 5
   m_Name: Rotating
   m_TagString: Untagged
@@ -1257,4 +1362,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7785110083296918423}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7816122739893303762}
+        m_MethodName: LoadLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7816122739893303762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175165677642307488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6527998ffd836d449b6774ff35b6630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  level2load: Level_1

@@ -55,7 +55,7 @@ public class LevelDataController : MonoBehaviour
             mCapturer = new MouseCapturer(CursorLockMode.None);
 
             // Create the menu
-            menu.ShowMenu(MenuController.MenuType.LEVEL_WIN_MENU);
+            MenuController.ShowMenu(MenuController.MenuType.LEVEL_WIN_MENU);
 
             // Store run time
             runTime = Time.time - playerTime.StartTime;
@@ -70,9 +70,6 @@ public class LevelDataController : MonoBehaviour
 
             highScoreTime = temp.highScores[levelNumber];
             highScoreCoins = temp.topCollectibleNumber[levelNumber];
-
-            // Stop time
-            Time.timeScale = 0.0f;
         }
     }
 

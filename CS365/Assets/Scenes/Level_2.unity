@@ -1414,6 +1414,16 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 1427920875}
+    - target: {fileID: 2956020323562725473, guid: b53e87d0dc80daf4ca9483ecc628cd04,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 888913900}
+    - target: {fileID: 2956020323562725473, guid: b53e87d0dc80daf4ca9483ecc628cd04,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToLevelSelection
+      objectReference: {fileID: 0}
     - target: {fileID: 4122110751476836864, guid: b53e87d0dc80daf4ca9483ecc628cd04,
         type: 3}
       propertyPath: m_LocalPosition.x
