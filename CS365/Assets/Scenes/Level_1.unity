@@ -2260,7 +2260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6527998ffd836d449b6774ff35b6630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1119741885}
   level2load: Menu(Galaxy)
 --- !u!114 &424211738
 MonoBehaviour:
@@ -7058,6 +7057,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230613028}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1230962757 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4289375136150001159, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+    type: 3}
+  m_PrefabInstance: {fileID: 1828459249}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09451a1b524ab84090bfa3a7567059e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1254474018
 GameObject:
   m_ObjectHideFlags: 0
@@ -9692,6 +9703,11 @@ PrefabInstance:
       propertyPath: cameraHeight
       value: 3.75
       objectReference: {fileID: 0}
+    - target: {fileID: 1281307607495550021, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: mQuoteMgr
+      value: 
+      objectReference: {fileID: 1230962757}
     - target: {fileID: 1281307607495550022, guid: 86de119974674434d81fe24fb136ac53,
         type: 3}
       propertyPath: target
@@ -9792,6 +9808,31 @@ PrefabInstance:
       propertyPath: rotatingObjs.Array.data[0]
       value: 
       objectReference: {fileID: 1106629711}
+    - target: {fileID: 1281307607560517405, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281307607560517405, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281307607560517405, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281307607560517405, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 98.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281307607560517405, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 101.09091
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86de119974674434d81fe24fb136ac53, type: 3}
 --- !u!114 &1588046888 stripped
@@ -11306,6 +11347,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4289375136146856642, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.48235294
+      objectReference: {fileID: 0}
     - target: {fileID: 4289375136146856643, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -11315,6 +11361,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 9.771698
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289375136146856643, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289375136146856643, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289375136146856643, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 101.10832
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289375136146856643, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 103.63283
       objectReference: {fileID: 0}
     - target: {fileID: 4289375136150001156, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
         type: 3}

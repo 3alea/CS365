@@ -10,6 +10,7 @@ public class ZoneShowcaseCameraLogic : MonoBehaviour
     public float cameraHeight;
     public float cameraRotationSpeed;
 
+    public QuoteManager mQuoteMgr;
     public Image flashTransition;
     public float transitionTime = 0.75f;
 
@@ -37,7 +38,10 @@ public class ZoneShowcaseCameraLogic : MonoBehaviour
         cameraAngle += Time.deltaTime * cameraRotationSpeed;
 
         if (Input.anyKey)
+        {
             inTransition = true;
+            mQuoteMgr.TerminateFade();
+        }
 
         if (inTransition)
         {

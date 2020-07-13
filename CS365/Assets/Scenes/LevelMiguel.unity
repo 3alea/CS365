@@ -6554,6 +6554,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4289375136146856642, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.49019608
+      objectReference: {fileID: 0}
     - target: {fileID: 4289375136146856643, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -6563,6 +6568,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 9.5268955
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289375136146856643, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 103.70639
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289375136146856643, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 102.55905
       objectReference: {fileID: 0}
     - target: {fileID: 4289375136150001156, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
         type: 3}
@@ -8191,6 +8206,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5172c88a4d94f964695fef9738a7d51d, type: 3}
+--- !u!114 &1000716104 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4289375136150001159, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+    type: 3}
+  m_PrefabInstance: {fileID: 769227666}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09451a1b524ab84090bfa3a7567059e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1020413746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3795861304610767187, guid: c5746a2af07710e48a6e8bd9bee3b8ec,
@@ -13032,6 +13059,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1281307606679048328, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1281307606679048331, guid: 86de119974674434d81fe24fb136ac53,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -13057,6 +13089,11 @@ PrefabInstance:
       propertyPath: cameraHeight
       value: 700
       objectReference: {fileID: 0}
+    - target: {fileID: 1281307607495550021, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: mQuoteMgr
+      value: 
+      objectReference: {fileID: 1000716104}
     - target: {fileID: 1281307607495550022, guid: 86de119974674434d81fe24fb136ac53,
         type: 3}
       propertyPath: target
@@ -13132,6 +13169,16 @@ PrefabInstance:
       propertyPath: giantBoulder
       value: 
       objectReference: {fileID: 1282157119}
+    - target: {fileID: 1281307607560517405, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 101.09091
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281307607560517405, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 98.79999
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1281307607495550022, guid: 86de119974674434d81fe24fb136ac53, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 86de119974674434d81fe24fb136ac53, type: 3}
@@ -14411,6 +14458,16 @@ PrefabInstance:
       propertyPath: data
       value: 
       objectReference: {fileID: 1500071836}
+    - target: {fileID: 1592828337269954177, guid: b53e87d0dc80daf4ca9483ecc628cd04,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 988
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592828337269954177, guid: b53e87d0dc80daf4ca9483ecc628cd04,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 556
+      objectReference: {fileID: 0}
     - target: {fileID: 4122110751476836864, guid: b53e87d0dc80daf4ca9483ecc628cd04,
         type: 3}
       propertyPath: m_LocalPosition.x
