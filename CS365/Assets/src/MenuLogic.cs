@@ -8,7 +8,11 @@ public class MenuLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        AudioManager mng = FindObjectOfType<AudioManager>();
+
+        mng.StopAllSounds();
+
+        mng.Play("MusicMenu");
     }
 
     // Update is called once per frame

@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3071586170001781045}
   - component: {fileID: 3071586170001781046}
   - component: {fileID: 3071586170001781047}
-  - component: {fileID: 3071586170001781048}
   - component: {fileID: 3071586170001781049}
   m_Layer: 0
   m_Name: Player
@@ -126,10 +125,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e9a604f73e77548ab3d62823af8080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockVerticalMovement: 0
+  limitVelocity: 1
+  canJumpMiguel: 1
   mCamera: {fileID: 0}
   MovSpeed: 150
   MaxSpeed: 12.55
   JumpSpeed: 150
+  isActive: 0
   doubleJump_max_time: 5
   DoubleJump: 0
   Max_time_speeded_up: 5
@@ -137,6 +140,8 @@ MonoBehaviour:
   speeded_up_t: 0
   death_hight: -10
   pushback_vel: 150000
+  wc: {fileID: 0}
+  level2Load: 
 --- !u!114 &3071586170001781047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,21 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231d44cd104879c4bb459ff9351abbd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollectableNumber: 0
   CollectableText: {fileID: 0}
---- !u!114 &3071586170001781048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3071586170001781040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f075b39e965b2ab40bc94050919a99d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ray_length: 5
-  camera: {fileID: 0}
 --- !u!114 &3071586170001781049
 MonoBehaviour:
   m_ObjectHideFlags: 0

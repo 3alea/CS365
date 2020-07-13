@@ -33,6 +33,11 @@ public class CountdownLogic : MonoBehaviour
     private Transform countdownTrans;
     private AudioSource countdownAudio;
 
+    private void Awake()
+    {
+        FindObjectOfType<AudioManager>().StopAllSounds();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,6 +84,9 @@ public class CountdownLogic : MonoBehaviour
 
             spr.sprite = CountdownSprites[countState];
             countdownAudio.clip = CountdownSounds[countState];
+
+
+            //TODO OIER:        Swap for audio mng
             countdownAudio.Play();
 
             if (countState == 0)
