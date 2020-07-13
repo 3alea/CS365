@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -53,6 +53,9 @@ public class Ball : MonoBehaviour
         playerOrigPos = trans.localPosition;
         JumpRestricted = false;
         bOnJumpableSurface = false;
+        // Make movement speed constant between all levels
+        MovSpeed = 150.0f; // Acceleration (who named this???)
+        MaxSpeed = 12.55f; // Self-explanatory
         JumpsRemaining = 0;
         internalTimer = 0.0f;
         PowerUpTime = 3.0f;
