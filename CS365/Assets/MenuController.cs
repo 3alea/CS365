@@ -32,6 +32,11 @@ public class MenuController : MonoBehaviour
         }
     }
 
+    static public MenuType GiveCurrentMenu()
+    {
+        return mCurrentMenu;
+    }
+
     public void GoToLevelSelection()
     {
         ShowMenu(MenuType.LEVEL_SELECTION_MENU);
