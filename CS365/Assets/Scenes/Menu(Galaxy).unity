@@ -872,6 +872,15 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: Star
+    clip: {fileID: 8300000, guid: 4c0dbc04f9d98e244bc07fb7e4cca542, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
 --- !u!4 &1289687029
 Transform:
   m_ObjectHideFlags: 0
