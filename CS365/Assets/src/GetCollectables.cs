@@ -23,6 +23,9 @@ public class GetCollectables : MonoBehaviour{
             Destroy(_col.gameObject);
             CollectableNumber++;
             CollectableText.text = CollectableNumber.ToString();
+
+            if(!FindObjectOfType<AudioManager>().IsPlaying("Star"))
+                  FindObjectOfType<AudioManager>().Play("Star");
         }
     }
 }

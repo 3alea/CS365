@@ -18,7 +18,9 @@ public class DoorOpenManager : MonoBehaviour
     {
         if(Buttoncount >= MaxButtonCount)
         {
-            rbShoe.isKinematic = false;
+            //rbShoe.isKinematic = false;
+
+            Destroy(this.gameObject);
         }
     }
 }
