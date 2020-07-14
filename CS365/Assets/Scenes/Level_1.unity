@@ -9678,6 +9678,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1281307606679048329, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1281307606679048331, guid: 86de119974674434d81fe24fb136ac53,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -11491,6 +11496,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: QuoteCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289375136150001162, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4289375136657131879, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
         type: 3}
@@ -13798,6 +13808,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MenuCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4122110751476836870, guid: b53e87d0dc80daf4ca9483ecc628cd04,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5258822860243151024, guid: b53e87d0dc80daf4ca9483ecc628cd04,
         type: 3}

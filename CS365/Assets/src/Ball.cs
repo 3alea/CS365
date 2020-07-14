@@ -89,7 +89,8 @@ public class Ball : MonoBehaviour
         }
 
         result.Normalize();
-        rb.AddForce(result * MovSpeed);
+        rb.AddForce(result * MovSpeed * Time.deltaTime / 0.007f);
+        //rb.velocity += result * MovSpeed * 0.010f;
 
 
         if (JumpRestricted)

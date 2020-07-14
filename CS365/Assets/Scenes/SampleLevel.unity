@@ -1413,6 +1413,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4122110751476836870, guid: b53e87d0dc80daf4ca9483ecc628cd04,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5258822860243151024, guid: b53e87d0dc80daf4ca9483ecc628cd04,
         type: 3}
       propertyPath: dataController
@@ -3709,6 +3714,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1281307606679048329, guid: 86de119974674434d81fe24fb136ac53,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1281307606679048331, guid: 86de119974674434d81fe24fb136ac53,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -4234,6 +4244,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuoteCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4289375136150001162, guid: 1fdd45c7fc9bfde448f5562d8cc48b85,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fdd45c7fc9bfde448f5562d8cc48b85, type: 3}
 --- !u!114 &4289375135413023438 stripped
@@ -4367,7 +4382,7 @@ PrefabInstance:
     - target: {fileID: 9115606861809134679, guid: 7b75d87b3d10e2f4ba166a9088f49dbe,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.15
+      value: 6.47
       objectReference: {fileID: 0}
     - target: {fileID: 9115606861809134679, guid: 7b75d87b3d10e2f4ba166a9088f49dbe,
         type: 3}
