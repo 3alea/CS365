@@ -7,11 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuLogic : MonoBehaviour
 {
-    
-    public void Start()
-    {
-        
-    }
     public void OnClicked(Button button)
     {
         if(button.name == "Return")

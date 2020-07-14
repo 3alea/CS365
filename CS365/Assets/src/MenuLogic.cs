@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class MenuLogic : MonoBehaviour
 {
@@ -27,11 +26,26 @@ public class MenuLogic : MonoBehaviour
         {
             SceneManager.LoadScene("Scenes/SampleLevel");
         }
-        if(Input.GetKey("escape"))
+        if (Input.GetKey("[+]"))
         {
-            MouseCaptureHandler.ReleaseCapturer(mouse);
-            Cursor.lockState = CursorLockMode.None;
-            MenuController.ShowMenu(MenuController.MenuType.PAUSE_MENU);
+            MenuController.ShowMenu(MenuController.MenuType.LEVEL_SELECTION_MENU);
+            GameObject obj = GameObject.Find("Canvas");
+            obj.SetActive(false);
+        }
+        if (Input.GetKey("tab"))
+        {
+            MenuController.ShowMenu(MenuController.MenuType.SETTINGS_MENU);
+            GameObject obj = GameObject.Find("Canvas");
+            obj.SetActive(false);
+        }
+        if (Input.GetKey("escape"))
+        {
+            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Menu(Galaxy)"))
+            {
+                MouseCaptureHandler.ReleaseCapturer(mouse);
+                Cursor.lockState = CursorLockMode.None;
+                MenuController.ShowMenu(MenuController.MenuType.PAUSE_MENU);
+            }
         }
 
     }
