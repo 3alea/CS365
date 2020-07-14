@@ -159,6 +159,6 @@ public class Ball : MonoBehaviour
 
     public void Restart()
     {
-        wc.LoadCertainLevel(level2Load);
+        WinCondition.LoadCertainLevel(level2Load);
     }
 }

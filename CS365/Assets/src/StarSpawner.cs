@@ -9,7 +9,7 @@ public class StarSpawner : MonoBehaviour
     public GameObject prefab;
     
     // The stars
-    public GameObject[] stars;
+    public Toggle[] stars = new Toggle[3];
 
     // Checks the necessary times to activate the stars
     public LevelDataController dataController;
@@ -18,24 +18,9 @@ public class StarSpawner : MonoBehaviour
     public float distance;
 
     // Final time store
-    public float finalTime;
+    float finalTime;
 
-    public float temp;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Create stars
-        stars = new GameObject[3];
-
-        // Instantiate the 3 stars
-        for(int counter = 0; counter < 3; counter++)
-        {
-            stars[counter] = Instantiate(prefab, this.transform, false);
-            stars[counter].transform.localScale = new Vector3(5, 5, 0);
-            stars[counter].transform.localPosition = new Vector3(counter * distance, 0.0f, 10.0f);
-        }
-    }
+    float temp;
 
     // Update is called once per frame
     void Update()
@@ -48,20 +33,20 @@ public class StarSpawner : MonoBehaviour
         // Check if the player was fast enough!
         // Star 1
         if (finalTime < dataController.starTime1)
-            stars[2].GetComponent<Toggle>().isOn = true;
+            stars[2].isOn = true;
         else
-            stars[2].GetComponent<Toggle>().isOn = false;
+            stars[2].isOn = false;
 
         // Star 2
         if (finalTime < dataController.starTime2)
-            stars[1].GetComponent<Toggle>().isOn = true;
+            stars[1].isOn = true;
         else
-            stars[1].GetComponent<Toggle>().isOn = false;
+            stars[1].isOn = false;
 
         // Star 3
         if (finalTime < dataController.starTime3)
-            stars[0].GetComponent<Toggle>().isOn = true;
+            stars[0].isOn = true;
         else
-            stars[0].GetComponent<Toggle>().isOn = false;
+            stars[0].isOn = false;
     }
 }

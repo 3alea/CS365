@@ -18,18 +18,19 @@ public class QuoteManager : MonoBehaviour
     private Color mPersCol; //variable to set for the text
     private Color mFadeOutCol;
     private bool mFadeIn;
+    private bool mFadeEnded = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        mTexCol = new Color(1.0f,1.0f,1.0f,0.0f);
-        mPersCol = new Color(1.0f, 1.0f, 1.0f, 0.0f);
-        mFadeOutCol = new Color(0.0f, 0.0f, 0.0f,1.0f);
-        mFadeIn = true;
+        ResetQuote();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (mFadeEnded) return;
+
         if (mFadeIn)
         {
             mTexCol.a = Mathf.Lerp(mTexCol.a, 1.0f, mFadeSpeed); //change color to quote
@@ -41,14 +42,34 @@ public class QuoteManager : MonoBehaviour
             mPersonText.color = mPersCol; //change actual name color
 
             if (mTexCol.a > 0.95f && mPersCol.a > 0.95f)
+            {
                 mFadeIn = false;
+            }
         }
         else
         {
             mFadeOutCol.a = Mathf.Lerp(mFadeOutCol.a, 0.0f, mFadeSpeed);
-            mPersonText.color = new Color(1.0f,1.0f,1.0f,mFadeOutCol.a); //change actual name color
+            mPersonText.color = new Color(1.0f, 1.0f, 1.0f, mFadeOutCol.a); //change actual name color
             mQuoteText.color = new Color(1.0f, 1.0f, 1.0f, mFadeOutCol.a);
             mBackGround.color = mFadeOutCol;
         }
+    }
+
+    public void TerminateFade()
+    {
+        mFadeEnded = true;
+
+        mPersonText.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+        mQuoteText.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+        mBackGround.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
+    }
+
+    public void ResetQuote()
+    {
+        mTexCol = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+        mPersCol = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+        mFadeOutCol = mBackGround.color;
+        mFadeIn = true;
+        mFadeEnded = false;
     }
 }
