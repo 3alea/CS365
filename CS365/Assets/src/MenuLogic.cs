@@ -22,11 +22,11 @@ public class MenuLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Submit"))
+        if (Input.GetButtonDown("Submit") && SceneManager.GetActiveScene().name == "Menu(Galaxy)")
         {
             SceneManager.LoadScene("Scenes/SampleLevel");
         }
-        if (Input.GetKey("[+]"))
+        /*if (Input.GetKey("[+]"))
         {
             MenuController.ShowMenu(MenuController.MenuType.LEVEL_SELECTION_MENU);
             GameObject obj = GameObject.Find("Canvas");
@@ -37,10 +37,14 @@ public class MenuLogic : MonoBehaviour
             MenuController.ShowMenu(MenuController.MenuType.SETTINGS_MENU);
             GameObject obj = GameObject.Find("Canvas");
             obj.SetActive(false);
-        }
+        }*/
         if (Input.GetKey("escape"))
         {
-            if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("Menu(Galaxy)"))
+            if(SceneManager.GetActiveScene().name == "Menu(Galaxy)")
+            {
+                Application.Quit();
+            }
+            else
             {
                 MouseCaptureHandler.ReleaseCapturer(mouse);
                 Cursor.lockState = CursorLockMode.None;
