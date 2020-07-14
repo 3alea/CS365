@@ -42,7 +42,7 @@ public class MenuLogic : MonoBehaviour
         {
             if(SceneManager.GetActiveScene().name == "Menu(Galaxy)")
             {
-                Application.Quit();
+                System.Diagnostics.Process.GetCurrentProcess().Kill();
             }
             else
             {
