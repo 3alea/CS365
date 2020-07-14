@@ -10,7 +10,9 @@ public class DoubleJump_Orb : MonoBehaviour
     {
         if(obj.gameObject.CompareTag(player_name))
         {
-            obj.gameObject.GetComponent<Ball>().DoubleJump = true;
+            Ball BallComp = obj.gameObject.GetComponent<Ball>();
+            if(BallComp.JumpsRemaining <= 1)
+                BallComp.JumpsRemaining += 1;
             Destroy(this.gameObject);
         }
     }

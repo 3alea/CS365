@@ -19,6 +19,6 @@ public class GrantJump : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-            other.GetComponent<Ball>().canJumpMiguel = true;
+            other.GetComponent<Ball>().EnableJumping = true;
     }
 }

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,7 +7,7 @@ public class Ball : MonoBehaviour
 {
     public bool lockVerticalMovement = false;
     public bool limitVelocity = true;
-    public bool canJumpMiguel = true;   // Used by RemoveJump script for boulder level (jump restricted works with timers)
+    public bool EnableJumping = true;   // Used by RemoveJump script for boulder level (jump restricted works with timers)
 
     public Transform mCamera;
     public float MovSpeed;
@@ -20,15 +20,14 @@ public class Ball : MonoBehaviour
     public bool isActive;
     private Vector3 playerOrigPos;
 
-    // Double jump
-    public float doubleJump_max_time;
-    public bool DoubleJump;
+    // Jumping Parameters
+    public float JumpVertSpeedTreshhold; // Determines the vertical velocity treshhold below which the player can activate their jump ability whilst in mid-air.
+    public int JumpsRemaining;  // Determines how many times the ball can jump. Decreases by one each time a jump is performed.
     private bool JumpRestricted;
-    float DoubleJump_time;
-    private int JumpCount;
     private float internalTimer;
+    private bool bOnJumpableSurface;
+
     private float PowerUpTime;
-    
     // Speed up
     public float Max_time_speeded_up;
     public bool speeded_up;
@@ -52,12 +51,15 @@ public class Ball : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         trans = GetComponent<Transform>();
         playerOrigPos = trans.localPosition;
-        DoubleJump = false;
         JumpRestricted = false;
-        JumpCount = 0;
+        bOnJumpableSurface = false;
+        // Make movement speed constant between all levels
+        MovSpeed = 150.0f; // Acceleration (who named this???)
+        MaxSpeed = 12.55f; // Self-explanatory
+        JumpsRemaining = 0;
         internalTimer = 0.0f;
         PowerUpTime = 3.0f;
-        DoubleJump_time = 0.0f;
+        JumpVertSpeedTreshhold = 0.5f;
     }
 
     // Update is called once per frame
@@ -99,20 +101,14 @@ public class Ball : MonoBehaviour
             internalTimer = 0.0f;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && canJumpMiguel)
+        if (EnableJumping && !JumpRestricted && JumpsRemaining > 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            if ((!DoubleJump && JumpCount == 1) || (DoubleJump && JumpCount == 2) || JumpRestricted)
-                return;
-            rb.AddForce(0, JumpSpeed, 0, ForceMode.Impulse);
-            JumpCount += 1;
-        }
-
-        // Double Jump timer
-        if(DoubleJump)
-        {
-            if(doubleJump_max_time < DoubleJump_time)
-                DoubleJump = false;
-            DoubleJump_time += Time.deltaTime;
+            // If ball is in mid-air, do not allow it to jump if its vertical speed is above the treshhold.
+            if( (!bOnJumpableSurface && rb.velocity.y <= JumpVertSpeedTreshhold) || bOnJumpableSurface)
+            {
+                rb.AddForce(0, JumpSpeed, 0, ForceMode.Impulse);
+                JumpsRemaining -= 1;
+            }
         }
         
         // Speed up timer
@@ -131,16 +127,17 @@ public class Ball : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Floor"))
+        bOnJumpableSurface = false;
+        if (JumpsRemaining <= 0 && other.gameObject.CompareTag("Floor"))
         {
-            JumpCount = 0;
+            JumpsRemaining = 1;
+            bOnJumpableSurface = true;
         }
 
         if (other.gameObject.CompareTag("JumpRestriction"))
         {
             Destroy(other.collider.gameObject);
             JumpRestricted = true;
-            JumpCount = 0;
         }
 
         if (other.gameObject.CompareTag("Enemy"))
